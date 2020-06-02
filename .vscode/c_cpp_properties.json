@@ -1,0 +1,30 @@
+{
+	"configurations": [
+		{
+			"name": "Win32",
+			"includePath": [
+				"${workspaceFolder}/**",
+				"${workspaceFolder}/FWLIB/inc",
+				"${workspaceFolder}/CORE",
+				"${workspaceFolder}/HARDWARE/**",
+				"${workspaceFolder}/SYSTEM/**",
+				"${workspaceFolder}/K/**"
+			],
+			"browse": {
+				"path": [
+					"${workspaceFolder}/**",
+					"${workspaceFolder}/FWLIB/inc",
+					"${workspaceFolder}/CORE",
+					"${workspaceFolder}/HARDWARE/**",
+					"${workspaceFolder}/SYSTEM/**",
+					"${workspaceFolder}/K/**"
+				]
+			},
+			"defines": ["_DEBUG", "UNICODE", "_UNICODE"],
+			"windowsSdkVersion": "10.0.17763.0",
+			"compilerPath": "D:/Program/gcc/mingw64/bin/gcc.exe",
+			"intelliSenseMode": "gcc-x64"
+		}
+	],
+	"version": 4
+}

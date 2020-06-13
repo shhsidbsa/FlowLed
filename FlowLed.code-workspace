@@ -12,6 +12,14 @@
             "beep.h": "c",
             "led.h": "c",
             "sys.h": "c"
+        },
+        "files.watcherExclude": {
+            "HARDWARE/**": true,
+            "SYSTEM/**": true
+        },
+        "files.exclude": {
+            "HARDWARE/**": true,
+            "SYSTEM/**": true
         }
     }
 }

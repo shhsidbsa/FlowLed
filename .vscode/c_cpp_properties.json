@@ -6,18 +6,14 @@
 				"${workspaceFolder}/**",
 				"${workspaceFolder}/FWLIB/inc",
 				"${workspaceFolder}/CORE",
-				"${workspaceFolder}/HARDWARE/**",
-				"${workspaceFolder}/SYSTEM/**",
-				"${workspaceFolder}/K/**"
+				"${workspaceFolder}/kai/**"
 			],
 			"browse": {
 				"path": [
 					"${workspaceFolder}/**",
 					"${workspaceFolder}/FWLIB/inc",
 					"${workspaceFolder}/CORE",
-					"${workspaceFolder}/HARDWARE/**",
-					"${workspaceFolder}/SYSTEM/**",
-					"${workspaceFolder}/K/**"
+					"${workspaceFolder}/kai/**"
 				]
 			},
 			"defines": ["_DEBUG", "UNICODE", "_UNICODE"],

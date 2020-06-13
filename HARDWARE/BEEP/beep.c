@@ -1,20 +1,28 @@
+/*
+ * @Coding: utf-8
+ * @Author: kai
+ * @Date: 2020-05-30 21:22:51
+ * @LastEditors: kai
+ * @LastEditTime: 2020-06-12 10:01:06
+ * @Description: file content
+ */
 #include "beep.h"
 
-//³õÊ¼»¯PF8ÎªÊä³ö¿Ú
-//BEEP IO³õÊ¼»¯
+//åˆå§‹åŒ–PF8ä¸ºè¾“å‡ºå£
+//BEEP IOåˆå§‹åŒ–
 void BEEP_Init(void)
 {
     GPIO_InitTypeDef GPIO_InitStructure;
 
-    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOF, ENABLE); //Ê¹ÄÜGPIOFÊ±ÖÓ
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOF, ENABLE); //ä½¿èƒ½GPIOFæ—¶é’Ÿ
 
-    //³õÊ¼»¯·äÃùÆ÷¶ÔÓ¦Òı½ÅGPIOF8
+    //åˆå§‹åŒ–èœ‚é¸£å™¨å¯¹åº”å¼•è„šGPIOF8
     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8;
-    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;      //ÆÕÍ¨Êä³öÄ£Ê½
-    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;     //ÍÆÍìÊä³ö
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;      //æ™®é€šè¾“å‡ºæ¨¡å¼
+    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;     //æ¨æŒ½è¾“å‡º
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz; //100MHz
-    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_DOWN;     //ÏÂÀ­
-    GPIO_Init(GPIOF, &GPIO_InitStructure);             //³õÊ¼»¯GPIO
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_DOWN;     //ä¸‹æ‹‰
+    GPIO_Init(GPIOF, &GPIO_InitStructure);             //åˆå§‹åŒ–GPIO
 
-    GPIO_ResetBits(GPIOF, GPIO_Pin_8); //·äÃùÆ÷¶ÔÓ¦Òı½ÅGPIOF8À­µÍ£¬
+    GPIO_ResetBits(GPIOF, GPIO_Pin_8); //èœ‚é¸£å™¨å¯¹åº”å¼•è„šGPIOF8æ‹‰ä½ï¼Œ
 }

@@ -7,6 +7,7 @@
  * @Description: file content
  */
 #include "kai_wwdg.h"
+#include "kai_led.h"
 
 //保存WWDG计数器的设置值,默认为最大.
 u8 WWDG_CNT = 0X7F;

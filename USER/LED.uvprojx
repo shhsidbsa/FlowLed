@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\USER;..\FWLIB\inc;..\kai\kai_HARDWARE;..\kai\kai_SYSTEM</IncludePath>
+              <IncludePath>..\CORE;..\FWLIB\inc;..\kai\kai_HARDWARE;..\kai\kai_SYSTEM;..\USER</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -394,9 +394,9 @@
               <FilePath>.\system_stm32f4xx.c</FilePath>
             </File>
             <File>
-              <FileName>demo_iwdg.c</FileName>
+              <FileName>demo_wwdg.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\kai\demo_iwdg.c</FilePath>
+              <FilePath>..\kai\demo\demo_wwdg.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -422,6 +422,11 @@
               <FileName>kai_iwdg.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\kai\kai_HARDWARE\kai_iwdg.c</FilePath>
+            </File>
+            <File>
+              <FileName>kai_wwdg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\kai\kai_HARDWARE\kai_wwdg.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -492,6 +497,11 @@
               <FileName>stm32f4xx_iwdg.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\FWLIB\src\stm32f4xx_iwdg.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_wwdg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FWLIB\src\stm32f4xx_wwdg.c</FilePath>
             </File>
           </Files>
         </Group>

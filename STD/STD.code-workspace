@@ -1,0 +1,28 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "cortex-debug.armToolchainPath": "D:/Roaming/GNUMCUEclipse/ARM Embedded GCC/8.2.1-1.7-20190524-0603/bin",
+        "cortex-debug.openocdPath": "D:/Roaming/GNUMCUEclipse/OpenOCD/0.10.0-12-20190422-2015/bin/openocd.exe",
+        "files.associations": {
+            "*.h": "c",
+            "usart.h": "c",
+            "beep.h": "c",
+            "led.h": "c",
+            "sys.h": "c",
+            "0.96OLED7PINSPI.C": "cpp",
+            "OLEDFONT.H": "cpp"
+        },
+        "files.watcherExclude": {
+            "HARDWARE/**": true,
+            "SYSTEM/**": true
+        },
+        "files.exclude": {
+            "HARDWARE/**": true,
+            "SYSTEM/**": true
+        }
+    }
+}

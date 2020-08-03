@@ -1,0 +1,34 @@
+{
+	"configurations": [
+		{
+			"name": "Win32",
+			"includePath": [
+				"${workspaceFolder}/USER",
+				"${workspaceFolder}/HARDWARE/**",
+				"${workspaceFolder}/FWLIB/inc",
+				"${workspaceFolder}/CORE",
+				"${workspaceFolder}/SYSTEM/**"
+			],
+			"browse": {
+				"path": [
+					"${workspaceFolder}/USER",
+					"${workspaceFolder}/HARDWARE/**",
+					"${workspaceFolder}/FWLIB/inc",
+					"${workspaceFolder}/CORE",
+					"${workspaceFolder}/SYSTEM/**"
+				]
+			},
+			"defines": [
+				"_DEBUG",
+				"UNICODE",
+				"_UNICODE",
+				"STM32F40_41xxx",
+				"USE_STDPERIPH_DRIVER"
+			],
+			"windowsSdkVersion": "10.0.17763.0",
+			"compilerPath": "D:/Program/gcc/mingw64/bin/gcc.exe",
+			"intelliSenseMode": "gcc-x64"
+		}
+	],
+	"version": 4
+}
